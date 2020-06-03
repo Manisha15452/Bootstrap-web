@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+img {
+  align:center
+}
+
+</style>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+   <h1 style="color:Tomato;">my webpage</h1>
+   {% load static %}
+   <img  style="align:center;"src="{% static "images/book.jpeg" %}" alt="library" width="250" height="240">
+
+</div>
+</body>
+</html>
